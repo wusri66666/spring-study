@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="hello" class="com.wzj.pojo.Hello">
+        <property name="name" value="wzj" />
+    </bean>
+
+<!--    使用无参构造来创建-->
+    <bean id="user" class="com.wzj.pojo.User">
+        <property name="name" value="ks" />
+    </bean>
+
+
+    <alias name="person" alias="person2" />
+<!--    使用有参构造来创建-->
+    <bean id="person" name="person3 person4" class="com.wzj.pojo.Person">
+<!--        1.根据下标设置-->
+<!--        <constructor-arg index="0" value="sn" />-->
+<!--        2.根据参数名设置-->
+<!--        <constructor-arg name="name" value="sn" />-->
+<!--        3.根据参数类型设置，不推荐使用-->
+        <constructor-arg type="java.lang.String" value="sn" />
+    </bean>
+
+</beans>

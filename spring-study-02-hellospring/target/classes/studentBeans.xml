@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="addr" class="com.wzj.pojo.Address">
+        <constructor-arg name="address" value="南京" />
+    </bean>
+
+    <bean id="student" class="com.wzj.pojo.Student">
+        <property name="name" value="wzj" />
+        <property name="address" ref="addr" />
+        <property name="books">
+            <array>
+                <value>bcsj</value>
+                <value>zzyhp</value>
+                <value>lsjr</value>
+            </array>
+        </property>
+        <property name="hobbies">
+            <list>
+                <value>听歌</value>
+                <value>看电影</value>
+            </list>
+        </property>
+        <property name="card">
+            <map>
+                <entry key="中国邮政" value="asdasda" />
+                <entry key="中国建设" value="asdadfd" />
+            </map>
+        </property>
+        <property name="games">
+            <set>
+                <value>AOA</value>
+                <value>BOB</value>
+                <value>COC</value>
+            </set>
+        </property>
+        <property name="wife">
+            <null />
+        </property>
+        <property name="info">
+            <props>
+                <prop key="学号">asdafs</prop>
+                <prop key="性别">男</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>

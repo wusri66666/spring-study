@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-study-03-autowire" />
+        <module name="spring-study-04-javaspring" />
+        <module name="spring-study-01" />
+        <module name="spring-study-05-springmybatis" />
+        <module name="spring-study-02-hellospring" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
